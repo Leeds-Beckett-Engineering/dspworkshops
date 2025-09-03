@@ -5,7 +5,7 @@ Leeds Beckett University DSP workshops
 
 The lab workstations and servers provide two environments for running Jupyter workbooks
 
-- [Microsoft Visal Studio Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 - [Jupyter Lab](https://jupyter.org/)
 
 Unless you are running complex code, Visual Studio Code is the simplest to set-up. If you are running complex code, including that requiring significant GPU resources, the School also provides access to
