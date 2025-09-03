@@ -25,10 +25,6 @@ Different versions of `Pandas` and `Matplotlib` have slightly different features
 - [`Pandas`](https://pandas.pydata.org/): 1.5
 - [`Python`](https://www.python.org/downloads/): 3.12
 
-For data handling, the following Libraries are also strongly recommended
-
-- [`openpyml`][https://pypi.org/project/openpyxl]: 3.1
-
 ### Using Conda
 
 All of the core and recommended packages are available on the lab workstations and server environments. Access is easiest via [conda](https://anaconda.org/anaconda/conda), which provides a mechanism to create a controlled virtual Python environment. You can either install the full [Conda](https://docs.conda.io/projects/conda/en/latest/index.html) package, or use [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) on most platforms.
@@ -59,7 +55,7 @@ conda env create -f environment.yml
 
 #### Lab workstations (PCs)
 
-If working on a Lab workstation (i.e. directly on a computer) then you can cgeck the environment has been sucessfully created by running
+If working on a Lab workstation (i.e. directly on a computer) then you can check the environment has been sucessfully created by running
 
 ```
 conda info --envs
@@ -75,14 +71,14 @@ Development environments such as Visual Studio Code also have [direct support](h
 
 #### Jupyter Hub
 
-Having created the instance you will need to init the emvironment and then activate it:
+Having created the instance you will need to init the environment and then activate it:
 ```
 conda init
 source ~/.bashrc
 conda activate DSP
 ```
 
-If you are coming back to it then the comamdns to acitivate the exisiting environemnt are:
+If you are coming back to Jupyter Hub then the commands to activate the exisiting environemnt are:
 ```
 source ~/.bashrc
 conda activate DSP
