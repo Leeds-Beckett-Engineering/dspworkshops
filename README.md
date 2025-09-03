@@ -1,4 +1,4 @@
-# DSp Workshops
+# DSP Workshops
 Leeds Beckett University DSP workshops
 
 ## Accessing Jupyter Workbooks
