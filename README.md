@@ -36,7 +36,11 @@ name: DSP
  
 channels:
   - default
+  - conda-forge
 dependencies:
+  - jupyter
+  - notebook
+  - nbconvert
   - ipywidgets
   - jupyterlab>=4.2
   - jupyterlab_widgets
