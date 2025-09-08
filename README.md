@@ -51,7 +51,7 @@ dependencies:
   - seaborn>=0.3
 ```
 
-When you cloned the git repository you will see it includes the above in a file called `environment.yaml`. Conda can use the `environment.yaml` to create a '`DSP`' environment by running the following in a terminal window (or a Terminal Tab on Jupyter Hub)
+When you eitehr downloaded or cloned the git repository you will see it includes the above in a file called `environment.yaml`. Conda can use the `environment.yaml` to create a '`DSP`' environment by running the following in a terminal window (or a Terminal Tab on Jupyter Hub)
 
 ```
 conda env create -f environment.yml
