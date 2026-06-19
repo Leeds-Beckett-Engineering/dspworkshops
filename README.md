@@ -22,7 +22,7 @@ Different versions of `Pandas` and `Matplotlib` have slightly different features
 
 - [`Matplotlib`](https://matplotlib.org/): 3.9
 - [`NumPy`](https://numpy.org/): 1.26
-- [`Pandas`](https://pandas.pydata.org/): 1.5
+- [`SciPy`](https://scipy.org/): 1.14
 - [`Python`](https://www.python.org/downloads/): 3.12
 
 ### Using Conda
@@ -43,7 +43,6 @@ dependencies:
   - matplotlib>=3.9
   - numpy>=1.26
   - scipy>=1.14
-  - pandas>=1.5
   - seaborn>=0.3
 ```
 

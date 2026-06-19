@@ -1,0 +1,92 @@
+<!-- <h1>DSP Workshops</h1> -->
+<p>Leeds Beckett University DSP workshops</p>
+<h2>Accessing Jupyter Workbooks</h2>
+<p>The lab workstations and servers provide two environments for running
+Jupyter workbooks</p>
+<ul>
+<li><a
+href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Microsoft
+Visual Studio Code</a></li>
+<li><a href="https://jupyter.org/">Jupyter Lab</a></li>
+</ul>
+<p>Unless you are running complex code, Visual Studio Code is the
+simplest to set-up. If you are running complex code, including that
+requiring significant GPU resources, the School also provides access
+to</p>
+<ul>
+<li><a href="https://jupyterhub.aet.leedsbeckett.ac.uk/">Jupyter
+Hub</a></li>
+</ul>
+<p>Whatever you intend to run you will need to ensure Python is setup
+correctly</p>
+<h2>Python Setup</h2>
+<h3>Libraries</h3>
+<p>Different versions of <code>Pandas</code> and <code>Matplotlib</code>
+have slightly different features, and in some cases don’t work in quite
+the same way as previous versions. To avoid frustration, these workshops
+have been developed with the following major versions as a minimum</p>
+<ul>
+<li><a href="https://matplotlib.org/"><code>Matplotlib</code></a>:
+3.9</li>
+<li><a href="https://numpy.org/"><code>NumPy</code></a>: 1.26</li>
+<li><a href="https://pandas.pydata.org/"><code>Pandas</code></a>:
+1.5</li>
+<li><a href="https://www.python.org/downloads/"><code>Python</code></a>:
+3.12</li>
+</ul>
+<h3>Using Conda</h3>
+<p>All of the core and recommended packages are available on the lab
+workstations and server environments. Access is easiest via <a
+href="https://anaconda.org/anaconda/conda">conda</a>, which provides a
+mechanism to create a controlled virtual Python environment. You can
+either install the full <a
+href="https://docs.conda.io/projects/conda/en/latest/index.html">Conda</a>
+package, or use <a
+href="https://www.anaconda.com/docs/getting-started/miniconda/install">Miniconda</a>
+on most platforms.</p>
+<p>Whichever package you use, they should all provide the
+<code>conda</code> utility as the main interface. Using the
+<code>conda</code> utility, the Workbooks can all be run using a
+suitable <code>environment.yml</code> as below</p>
+<pre><code>name: DSP
+ 
+channels:
+  - default
+dependencies:
+  - ipywidgets
+  - jupyterlab&gt;=4.2
+  - jupyterlab_widgets
+  - matplotlib&gt;=3.9
+  - numpy&gt;=1.26
+  - scipy&gt;=1.14
+  - pandas&gt;=1.5
+  - seaborn&gt;=0.3</code></pre>
+<p>When you cloned the git repository you will see it includes the above
+in a file called <code>environment.yaml</code>. Conda can use the
+<code>environment.yaml</code> to create a ‘<code>DSP</code>’ environment
+by running the following in a terminal window (or a Terminal Tab on
+Jupyter Hub)</p>
+<pre><code>conda env create -f environment.yml</code></pre>
+<h4>Lab workstations (PCs)</h4>
+<p>If working on a Lab workstation (i.e. directly on a computer) then
+you can check the environment has been sucessfully created by
+running</p>
+<pre><code>conda info --envs</code></pre>
+<p>This should show the <code>DSP</code> environment. Once found, the
+environment can be activated through the command</p>
+<pre><code>conda activate DSP</code></pre>
+<p>Development environments such as Visual Studio Code also have <a
+href="https://code.visualstudio.com/docs/python/environments">direct
+support</a> <a
+href="https://www.anaconda.com/docs/tools/working-with-conda/ide-tutorials/vscode">for
+Conda</a>.</p>
+<h4>Jupyter Hub</h4>
+<p>Having created the instance you will need to init the environment and
+then activate it:</p>
+<pre><code>conda init
+source ~/.bashrc
+conda activate DSP</code></pre>
+<p>If you are coming back to Jupyter Hub then the commands to activate
+the exisiting environemnt are:</p>
+<pre><code>source ~/.bashrc
+conda activate DSP</code></pre>
