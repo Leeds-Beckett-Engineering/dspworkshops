@@ -3,6 +3,9 @@ name: DSP
 channels:
   - default
 dependencies:
+  - jupyter
+  - notebook
+  - nbconvert
   - ipywidgets
   - jupyterlab>=4.2
   - jupyterlab_widgets
