@@ -24,7 +24,7 @@ Different versions of `Pandas` and `Matplotlib` have slightly different features
 - [`Matplotlib`](https://matplotlib.org/): 3.10.9
 - [`NumPy`](https://numpy.org/): 2.5.0
 - [`SciPy`](https://scipy.org/): 1.18.0
-- [`Python`](https://www.python.org/downloads/): 3.13
+- [`Python`](https://www.python.org/downloads/): 3.14
 
 ### Using Conda
 
@@ -97,5 +97,5 @@ If you are coming back to Jupyter Hub then the commands to activate the existing
 
 ```{.bash}
 source ~/.bashrc
-conda activate DSP
+conda activate DSP-2627
 ```
