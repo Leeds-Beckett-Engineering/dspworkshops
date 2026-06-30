@@ -90,7 +90,7 @@ Having created the instance you will need to init the environment and then activ
 conda init
 source ~/.bashrc
 conda activate DSP-2627
-conda 
+python -m ipykernel install --user --name DSP-2627
 ```
 
 If you are coming back to Jupyter Hub then the commands to activate the existing environment are:
@@ -98,4 +98,5 @@ If you are coming back to Jupyter Hub then the commands to activate the existing
 ```{.bash}
 source ~/.bashrc
 conda activate DSP-2627
+python -m ipykernel install --user --name DSP-2627
 ```
