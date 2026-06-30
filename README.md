@@ -93,6 +93,8 @@ conda activate DSP-2627
 python -m ipykernel install --user --name DSP-2627
 ```
 
+The last line adds a kernel called DSP-2627 which can then be used with the workshops. THis can be selected by going to kernel in top right hand orner and choosing the kernel from the provided list.
+
 If you are coming back to Jupyter Hub then the commands to activate the existing environment are:
 
 ```{.bash}
