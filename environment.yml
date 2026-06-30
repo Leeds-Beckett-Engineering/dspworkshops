@@ -1,16 +1,17 @@
-name: DSP
+name: DSP-2627
  
 channels:
   - default
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - jupyter
-  - notebook
-  - nbconvert
+  - ipykernel
   - ipywidgets
-  - jupyterlab>=4.2
+  - jupyterlab
   - jupyterlab_widgets
-  - matplotlib>=3.9
-  - numpy>=1.26
-  - scipy>=1.14
-  - pandas>=1.5
-  - seaborn>=0.3
+  - nbconvert
+  - matplotlib
+  - numpy
+  - scipy
+  - pandas
+  - seaborn
